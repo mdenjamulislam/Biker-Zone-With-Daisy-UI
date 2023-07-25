@@ -10,16 +10,17 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    clifford: '#da373d',
-                    primary: '#E76F51',
-                  }
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                            'primary': '#E76F51',
+                            'primary-bg': 'rgba(231, 111, 81, 0.10)',
+                        }
+                    }
                 }
-              }
             }
-          </script>
+        </script>
     </head>
 
     <body>
@@ -35,7 +36,8 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
-                        <ul tabindex="0" class="text-base menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabindex="0"
+                            class="text-base menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li>
                                 <a>Shop</a>
@@ -44,7 +46,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a href="/" class="normal-case text-4xl font-bold">BIker Zone</a>
+                    <a href="/" class="normal-case text-xl md:text-4xl font-bold">BIker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base">
@@ -55,12 +57,77 @@
                     </ul>
                 </div>
                 <div class="">
-                    <a class="btn bg-primary text-white ">Button</a>
+                    <a class="btn bg-primary text-white ">Login</a>
                 </div>
             </div>
 
             <!-- banner Area -->
-            
+            <div class="carousel w-full lg:h-[550px] bg-primary-bg">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row justify-between items-center p-5 md:p-24 gap-8 md:gap-16">
+                        <div class="space-y-7 flex-1">
+                            <h1 class="text-4xl md:text-6xl text-black font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="btn bg-primary text-white ">Purchase</a>
+                        </div>
+                        <div class="flex-1">
+                            <img src="assets/images/slider/bike1.png" class="w-auto md:w-[406px]" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn bg-transparent">❮</a>
+                        <a href="#slide2" class="btn bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row justify-between items-center p-5 md:p-24 gap-8 md:gap-16">
+                        <div class="space-y-7 flex-1">
+                            <h1 class="text-4xl md:text-6xl text-black font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="btn bg-primary text-white ">Purchase</a>
+                        </div>
+                        <div class="flex-1">
+                            <img src="assets/images/slider/bike2.png" class="w-auto md:w-[406px]" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn bg-transparent">❮</a>
+                        <a href="#slide3" class="btn bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row justify-between items-center p-5 md:p-24 gap-8 md:gap-16">
+                        <div class="space-y-7 flex-1">
+                            <h1 class="text-4xl md:text-6xl text-black font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="btn bg-primary text-white ">Purchase</a>
+                        </div>
+                        <div class="flex-1">
+                            <img src="assets/images/slider/bike3.png" class="w-auto md:w-[406px]" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn bg-transparent">❮</a>
+                        <a href="#slide4" class="btn bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row justify-between items-center p-5 md:p-24 gap-8 md:gap-16">
+                        <div class="space-y-7 flex-1">
+                            <h1 class="text-4xl md:text-6xl text-black font-bold">Ride-on R15 V4 <br> with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="btn bg-primary text-white ">Purchase</a>
+                        </div>
+                        <div class="flex-1">
+                            <img src="assets/images/slider/bike4.png" class="w-auto md:w-[406px]" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn bg-transparent">❮</a>
+                        <a href="#slide1" class="btn bg-transparent">❯</a>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- End Header Area -->
 
